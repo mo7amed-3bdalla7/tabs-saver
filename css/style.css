@@ -1,0 +1,73 @@
+body{
+    font-family: sans-serif;
+}
+
+.container {
+    width: 400px;
+
+}
+
+
+/** This class will hide all the body be default **/
+
+#accordion .body {
+    display: none;
+    padding: 10px;
+}
+
+.header {
+    background-color: rgb(246, 246, 246);
+    color: #454545;
+    padding: 10px;
+    font-size: 13pt;
+}
+
+.header:hover {
+    background-color: rgb(237, 237, 237);
+}
+
+
+/** This class will show the body if it has a parent with active       class
+**/
+
+#accordion .active .body {
+    display: block;
+    font-size: 11pt;
+}
+
+#accordion .active .header {
+    background-color: #007fff;
+    color: #fff;
+    font-size: 13pt;
+}
+
+#accordion .panel ,.session{
+    border: solid 1px #D6D6D6;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #f7f7f7;
+}
+
+.session {
+    width: 298px
+}
+
+button {
+    background-color: #007fff;
+    color: #fff;
+    font-size: 11pt;
+    padding: 5px 25px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #499fff;
+}
+
+button:active {
+  transform: translateY(4px);
+}
